@@ -5,8 +5,11 @@
             "name": "Python: Genetic Swarm GUI",
             "type": "debugpy",
             "request": "launch",
-            "module": "genetic_swarm.input_gui",
-            "cwd": "${workspaceFolder}"
+            "module": "src.genetic.input_gui",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src${pathSeparator}${env:PYTHONPATH}"
+            }
         }
     ]
 }

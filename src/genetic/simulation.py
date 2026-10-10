@@ -30,7 +30,7 @@ class Simulation:
             for j in range(5, 10):
                 self.mz.set_open(i, j, False)
         for i in range(15, 20):
-            for j in range(5, 10):
+            for j in range(5, 20):
                 self.mz.set_open(i, j, False)
 
     def cross_over(self) -> None:

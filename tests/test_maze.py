@@ -2,7 +2,7 @@
 
 import pytest
 
-from genetic_swarm.maze import Maze
+from genetic.maze import Maze
 
 
 def test_is_open():

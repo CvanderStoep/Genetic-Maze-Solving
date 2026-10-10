@@ -11,14 +11,15 @@ A population of individuals tries to reach a target position in a 2D maze. Each 
 ## Run
 
     # GUI input form (tkinter) followed by a live matplotlib plot
-    python -m genetic_swarm.input_gui
+    PYTHONPATH=src .venv/bin/python -m genetic.input_gui
 
     # command line: maze_size individuals moves generations
-    python -m genetic_swarm.simulation 50 128 100 100
-    python -m genetic_swarm.simulation 50 128 100 100 --no-plot   # headless
+PYTHONPATH=src .venv/bin/python -m genetic.simulation 50 128 100 100
+PYTHONPATH=src .venv/bin/python -m genetic.simulation 50 128 100 100 --no-plot # headless
+
 
     # plot the USA outline data
-    python -m genetic_swarm.plot_filter inp/USA.txt
+PYTHONPATH=src .venv/bin/python -m genetic.plot_filter inp/USA.txt
 
     # tests
     pytest

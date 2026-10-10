@@ -2,10 +2,12 @@
 import tkinter as tk
 from tkinter import messagebox
 
-try:
-    from .simulation import run_simulation
-except ImportError:  # pragma: no cover - allows running this file directly
-    from simulation import run_simulation
+from .simulation import run_simulation
+
+# try:
+#     from .simulation import run_simulation
+# except ImportError:  # pragma: no cover - allows running this file directly
+#     from simulation import run_simulation
 
 FIELDS = [
     ("Maze size", "50"),
